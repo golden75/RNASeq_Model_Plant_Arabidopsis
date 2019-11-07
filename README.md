@@ -194,5 +194,6 @@ The full slurm script is called [sickle.sh](/02_trimmed_reads/sickle.sh), which 
 └── trimmed_SRR3498216.fastq
 ```   
 
-It is helpful to see how the quality of the data has changed after using sickle. To do this, we will be using the commandline versions of [fastqc](https://www.bio Informatics.babraham.ac.uk/projects/fastqc/INSTALL.txt) and [MultiQC](http://multiqc. Info/docs/), These two programs simply create reports of the average quality of our trimmed reads, with some graphs. There is no way to view a --help menu for these programs in the command-line. However, their use is quite simple, we simply run "fastqc <trimmed_fastq>" or "multiqc -f -n trimmed trimmed". Do not worry too much about the options for MultiQC! Let's write our script: 
+It is helpful to see how the quality of the data has changed after using sickle. To do this, we will be using the commandline versions of [fastqc](https://www.bioInformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt) and [MultiQC](http://multiqc.Info/docs/), These two programs simply create reports of the average quality of our trimmed reads, with some graphs. There is no way to view a --help menu for these programs in the command-line. However, their use is quite simple, we simply run `fastqc <trimmed_fastq>` or `multiqc -f -n trimmed trimmed`. Do not worry too much about the options for MultiQC! Let's write our script: 
  
+
