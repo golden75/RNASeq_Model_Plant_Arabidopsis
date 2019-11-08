@@ -449,6 +449,7 @@ samtools sort -@ 6 -o athaliana_root_2.bam athaliana_root_2.sam
 samtools sort -@ 6 -o athaliana_shoot_1.bam athaliana_shoot_1.sam
 samtools sort -@ 6 -o athaliana_shoot_2.bam athaliana_shoot_2.sam
 ```   
+The full slurm script is called [samsort.sh](/03_align/samsort.sh) and its stored in **03_align/** directory. 
 
 This will create sorted bam files and the file structure in the **03_align/** directory will look like:  
 ```
@@ -748,7 +749,7 @@ stringtie -e -B -p 16 athaliana_shoot_1.bam -G stringtie_merged.gtf -o ballgown/
 stringtie -e -B -p 16 athaliana_shoot_2.bam -G stringtie_merged.gtf -o ballgown/athaliana_shoot_2/athaliana_shoot_2.count
 ```  
 
-Now we are ready to compile all of our code into a single script, which we call [transcript_assembly.sh]()
+Now we are ready to compile all of our code into a single script, which we call [transcript_assembly.sh](/04_assembly_n_quantify/transcript_assembly.sh)
 
 ```bash
 module load gffread/0.9.12
